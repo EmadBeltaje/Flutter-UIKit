@@ -108,7 +108,7 @@ class _GridLayoutState extends State<GridLayout> {
           Positioned(
             child: _expandedVideoRow([views[0]]),
             top: 20,
-            leftA: 20,
+            left: 20,
           ),
           Positioned.fill(
             child: _expandedVideoRow([views[1]]),
