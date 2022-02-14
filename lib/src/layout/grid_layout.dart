@@ -105,8 +105,14 @@ class _GridLayoutState extends State<GridLayout> {
       return Container(
           child: Column(
         children: <Widget>[
-          _expandedVideoRow([views[0]]),
-          _expandedVideoRow([views[1]])
+          Positioned(
+            child: _expandedVideoRow([views[0]]),
+            top: 20,
+            leftA: 20,
+          ),
+          Positioned.fill(
+            child: _expandedVideoRow([views[1]]),
+          ),
         ],
       ));
     } else if (views.length > 2 && views.length % 2 == 0) {
