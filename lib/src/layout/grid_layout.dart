@@ -103,7 +103,7 @@ class _GridLayoutState extends State<GridLayout> {
       );
     } else if (views.length == 2) {
       return Container(
-          child: Column(
+          child: Stack(
         children: <Widget>[
           Positioned(
             child: _expandedVideoRow([views[0]]),
